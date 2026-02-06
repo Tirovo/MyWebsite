@@ -1,0 +1,48 @@
+---
+import Base from "../layouts/Base.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import projects from "../data/projects.json";
+
+const featured = projects.featured ?? [];
+const others = projects.others ?? [];
+---
+<Base title="Tristan Londé — Portfolio" description="Clean portfolio showcasing data projects.">
+  <section class="section" id="projects">
+    <div style="display:flex; align-items:end; justify-content:space-between; gap: 12px; flex-wrap: wrap;">
+      <div>
+        <h2 class="h2">Featured Projects</h2>
+        <p class="small" style="margin: 6px 0 0;">High-impact projects with business value, clean deliverables and strong storytelling.</p>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top: 14px;">
+      {featured.map((p) => <ProjectCard project={p} featured={true} />)}
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="h2">More Projects</h2>
+    <p class="small" style="margin: 6px 0 0;">Everything else — still solid, just less “headline”.</p>
+
+    <div class="grid" style="margin-top: 14px;">
+      {others.map((p) => <ProjectCard project={p} featured={false} />)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card" style="padding: 18px;">
+      <h2 class="h2">About</h2>
+      <p class="small" style="font-size: 16px; margin-top: 10px;">
+        Engineering student at ENIB focused on Data & Business Analytics. I build end-to-end analytics projects:
+        from data prep and KPI design to dashboards and decision support.
+      </p>
+      <div style="display:flex; gap: 10px; flex-wrap: wrap; margin-top: 12px;">
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Analytics</span>
+        <span class="tag">Data Storytelling</span>
+      </div>
+    </div>
+  </section>
+</Base>
