@@ -1,0 +1,45 @@
+{
+  "featured": [
+    {
+      "title": "French Healthcare Spending — Assurance Maladie",
+      "description": "End-to-end analysis of public healthcare spending: data prep, KPI design, dashboarding and decision-oriented insights.",
+      "highlights": ["Power BI dashboard", "KPI design", "Data processing notebook"],
+      "tags": ["Python", "Power BI", "SQL", "Data Storytelling"],
+      "repo": "https://github.com/Tirovo/AssuranceMaladie-Analytics",
+      "demo": "",
+      "report": ""
+    },
+    {
+      "title": "Scent4All — AI Fragrance Recommender",
+      "description": "Recommendation system for perfumes using notes/accords similarity with clean UX and explainable recommendations.",
+      "highlights": ["Recommender baseline", "Similarity modeling", "Project-ready structure"],
+      "tags": ["Python", "NLP/Vectorization", "Recommender Systems"],
+      "repo": "https://github.com/Tirovo/Scent4All",
+      "demo": "",
+      "report": ""
+    },
+    {
+      "title": "Banking Dataset Masterclass — Analytics & Risk",
+      "description": "Synthetic banking data project focused on realistic pipelines, analytical questions, risk indicators and reproducible notebooks.",
+      "highlights": ["ETL mindset", "Business insights", "Clean documentation"],
+      "tags": ["Python", "Pandas", "Analytics", "ETL"],
+      "repo": "https://github.com/Tirovo/BankScope",
+      "demo": "",
+      "report": ""
+    }
+  ],
+  "others": [
+    {
+      "title": "EmotionAI Voice",
+      "description": "Audio signal processing + ML to detect emotions and produce interpretable insights.",
+      "tags": ["Python", "Audio", "ML"],
+      "repo": "https://github.com/Tirovo/EmotionAI-Voice"
+    },
+    {
+      "title": "EyeTrackR",
+      "description": "Computer vision system to detect fatigue/microsleep via webcam.",
+      "tags": ["Python", "PyTorch", "OpenCV"],
+      "repo": "https://github.com/Tirovo/EyeTrackR"
+    }
+  ]
+}
