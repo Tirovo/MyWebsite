@@ -19,7 +19,7 @@
       "report": ""
     },
     {
-      "title": "Banking Dataset Masterclass — Analytics & Risk",
+      "title": "BankScope — Banking Data Analytics & Risk",
       "description": "Synthetic banking data project focused on realistic pipelines, analytical questions, risk indicators and reproducible notebooks.",
       "highlights": ["ETL mindset", "Business insights", "Clean documentation"],
       "tags": ["Python", "Pandas", "Analytics", "ETL"],
