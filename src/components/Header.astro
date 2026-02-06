@@ -1,1 +1,27 @@
+---
+const NAME = "Tristan Londé";
+const ROLE = "Data & Business Analyst";
+const TAGLINE = "Turning raw data into decision-ready insights.";
+const LINKS = [
+  { label: "GitHub", href: "https://github.com/Tirovo" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/tristanlond%C3%A9/" },
+  { label: "CV", href: "/MyWebsite/Mon_CV.pdf" }
+];
+---
+<header class="container" style="padding: 28px 0 14px;">
+  <div class="card" style="padding: 18px 18px 16px;">
+    <div class="pill small">Δ Portfolio • {ROLE}</div>
 
+    <h1 class="h1">{NAME}</h1>
+    <p class="small" style="font-size: 16px; margin: 0 0 14px;">{TAGLINE}</p>
+
+    <div style="display:flex; gap: 10px; flex-wrap: wrap;">
+      {LINKS.map((l) => (
+        <a class="btn" href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined}>
+          {l.label}
+        </a>
+      ))}
+      <a class="btn primary" href="#projects">View Projects</a>
+    </div>
+  </div>
+</header>
