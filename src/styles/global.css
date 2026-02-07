@@ -100,3 +100,159 @@ a:hover{ opacity:.9; }
 @media (max-width: 860px){
   .grid{ grid-template-columns: 1fr; }
 }
+
+/* ===== Hero (clean UX) ===== */
+.hero{
+  padding: 28px 0 10px;
+}
+
+.hero__inner{
+  display: grid;
+  grid-template-columns: 1.1fr .9fr; /* texte gauche, image droite */
+  gap: 18px;
+  align-items: center;
+}
+
+.hero__left, .hero__right{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 26px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.35);
+  backdrop-filter: blur(10px);
+}
+
+.hero__left{
+  padding: 22px;
+}
+
+.hero__right{
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.78);
+  font-size: 14px;
+}
+
+.badge .dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(110,231,183,.85); /* accent 1 */
+  box-shadow: 0 0 0 6px rgba(110,231,183,.14);
+}
+
+.hero__title{
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.02;
+  margin: 14px 0 8px;
+  letter-spacing: -0.04em;
+}
+
+.hero__tagline{
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: rgba(255,255,255,.78);
+}
+
+.hero__bio{
+  margin: 0 0 16px;
+  color: rgba(255,255,255,.68);
+  font-size: 15px;
+  max-width: 62ch;
+}
+
+.hero__cta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  transition: transform .08s ease, background .15s ease;
+}
+
+.btn:hover{ transform: translateY(-1px); }
+
+.btn.primary{
+  background: rgba(59,130,246,.22);        /* accent 2 */
+  border-color: rgba(59,130,246,.45);
+}
+
+.btn.ghost{
+  background: rgba(255,255,255,.03);
+}
+
+.hero__chips{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip{
+  display:inline-flex;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.03);
+  color: rgba(255,255,255,.70);
+  font-size: 13px;
+}
+
+.photoCard{
+  width: min(340px, 100%);
+  aspect-ratio: 1 / 1;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+}
+
+.photoCard img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+.quickLinks{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pillLink{
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.78);
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .hero__inner{
+    grid-template-columns: 1fr;
+  }
+}
+
